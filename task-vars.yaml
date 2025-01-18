@@ -6,11 +6,11 @@
     DURATION: "120hrs"
     TRAINER: "Shiva"
   tasks:
-  - name: print the variable.
+  - name: print the variable on Task Level.
     vars:
       COURSE: "Ansible"
     ansible.builtin.debug:
       msg: "Course is {{COURSE}}, Duration is {{DURATION}}, Trainer name is {{TRAINER}}"  
-  - name: print the variable.
+  - name: print the variable on Play Level.
     ansible.builtin.debug:
       msg: "Course is {{COURSE}}, Duration is {{DURATION}}, Trainer name is {{TRAINER}}"  
